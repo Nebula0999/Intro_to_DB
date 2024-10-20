@@ -6,8 +6,8 @@ def create_database():
         # Connect to MySQL server (no database selected initially)
         connection = mysql.connector.connect(
             host='localhost',
-            user='root',
-            password='Nebulacloud@2024'
+            user='your_mysql_user',
+            password='your_mysql_password'
         )
 
         if connection.is_connected():
