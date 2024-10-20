@@ -1,6 +1,7 @@
 -- Query to show the full structure of the Books table
 SELECT 
     COLUMN_NAME, 
+    COLUMN_TYPE,
     DATA_TYPE, 
     IS_NULLABLE, 
     COLUMN_DEFAULT, 
@@ -9,5 +10,5 @@ SELECT
 FROM 
     INFORMATION_SCHEMA.COLUMNS 
 WHERE 
-    TABLE_SCHEMA = DATABASE() 
-    AND TABLE_NAME = 'Books';
+    TABLE_SCHEMA = 'alx_book_store'
+    AND TABLE_NAME = 'books';
